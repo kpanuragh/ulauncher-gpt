@@ -15,6 +15,12 @@
             "default_value": "gpt"
         },
         {
+          "id":"gpt_grammer",
+          "type":"keyword",
+          "name":"GPT Grammar",
+          "default_value":"grammar"
+        },
+        {
             "id": "api_key",
             "type": "input",
             "name": "OpenAI API Key",
