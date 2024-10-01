@@ -2,7 +2,7 @@
     "required_api_version": "^2.0.0",
     "name": "ChatGPT",
     "description": "Create a domain specific assistant using GPT-3.5",
-    "developer_name": "SeoFernando",
+    "developer_name": "Anuragh K P",
     "icon": "images/icon.png",
     "options": {
         "query_debounce": 2
@@ -13,12 +13,6 @@
             "type": "keyword",
             "name": "GPT",
             "default_value": "gpt"
-        },
-        {
-          "id":"gpt_grammer",
-          "type":"keyword",
-          "name":"GPT Grammar",
-          "default_value":"grammar"
         },
         {
             "id": "api_key",
@@ -47,6 +41,19 @@
             "name": "System Prompt",
             "description": "A prompt to give some context to the system. This is optional but highly recommended.",
             "default_value": "Convert natural language instructions into Linux commands. You have been programmed to understand a wide set of commands Linux related commands. You should only answer with the best and most relevant linux command, no descriptions or context, just return the command, do not use 'new lines'"
+        },
+        {
+          "id":"gpt_grammer",
+          "type":"keyword",
+          "name":"GPT Grammar",
+          "default_value":"grammar"
+        },
+        {
+            "id": "grammer_prompt",
+            "type": "input",
+            "name": "Grammer Prompt",
+            "description": "A prompt to give some context to the system. This is optional but highly recommended.",
+            "default_value": "Can you paraphrase this informal text to make it sound formal and professional?. You should only answer with the best and most relevant result, no descriptions or context, just return the result, do not use 'new lines'"
         },
         {
             "id": "temperature",
